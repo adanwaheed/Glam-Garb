@@ -1,0 +1,211 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .full{
+    background-color: white;
+  }
+  
+  body{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .header {
+    border: 1px solid #ccc;
+    box-shadow: 0px 10px 20px -1px rgba(16, 24, 47, 0.5); /* bottom box shadow */
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+  }
+  
+  .navbar {
+    /* height: 30px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #10182F;
+    color: rgb(255, 255, 255);
+    /* opacity: 0.9; */
+  }
+  
+  .company-name img {
+    width: 80px;
+    height: 75px;
+    border-radius: 5em;
+  }
+  
+  .search{
+    display: flex;
+  }
+  
+  .links a{
+    margin: 15px;
+    color: rgb(255, 255, 255);
+    font-size: inherit;
+    text-decoration: none;
+  }
+  
+  .login-button,
+  .signup-button {
+    margin-right: 20px;
+    font-size: inherit;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    border: solid white;
+  }
+  
+  
+  .login-button:hover, .signup-button:hover{
+    background-color: rgb(203, 203, 214, 0.633);
+    color: white;
+  }
+  
+  .menu-toggle{
+    display: none;
+  }
+  
+  .menu-toggle .hamburger{
+    float: right;
+  }
+  
+  .menu-toggle .hamburger img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5rem;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .menu-toggle{
+      display: flex;
+    }
+    
+    .links{
+      display: none;
+    }
+    
+    .search {
+      display: none;
+    }
+  
+    .prev, .next {
+      font-size: 16px;
+      padding: 12px;
+    }
+  
+    .category-section{
+      flex-direction: column;
+    }
+  }
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #305467;
+}
+
+.log-in form{
+  
+    max-width: 400px;
+    width: 30vw;
+    margin: auto auto;
+    padding: 20px;
+    background: #f7f8f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.log-in h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.log-in input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.log-in input[type='password']{
+    background-image: url('show.png');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
+}
+
+.log-in input[type="submit"]{
+    background: #348ebe;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.log-in input[type="submit"]:hover{
+    background: #214653;
+    color: #fff;
+}
+
+.log-in input:focus{
+    outline: none;
+    border: 1px solid #2a415e;
+    background-color: #ded5d5;
+}
+
+.log-in a{
+    text-decoration: none;
+}
+
+.log-in .link{
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.log-in a:hover{
+    color: #1e3b5b;
+}
+
+.log-in #more-links{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.log-in #more-links hr{
+    width: 40%;
+}
+
+.log-in #btn-fb{
+  background: #faf9f9;
+    color: #090909f6;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px auto;
+    border: 1px solid #0303035c;
+    cursor: pointer;
+    background-image: url('pngegg.png');
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 25px;
+}
+
+.log-in #btn-fb:hover{
+    background-color: #2f5f92;
+    color: #2c1c7b;
+}

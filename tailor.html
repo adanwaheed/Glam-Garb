@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tailor's Page</title>
+        <link rel="shortcut icon" href="glam .jpg" type="image/x-icon">
+        <link href="shop.css" rel="stylesheet">
+        <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">        
+        <link href="tailor.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <header class="header">
+            <nav class="navbar">
+                <div class="company-name"> 
+                  <img src="WhatsApp Image 2024-04-27 at 17.13.01.jpeg">
+                </div>          
+                <div class="links">
+                    <a href="index.html">Home</a> &ensp;
+                    <a href="shop.html">Shop</a> &ensp;
+                    <a href="aboutUs.html">About Us</a> &ensp;
+                    <a href="contactUs.html">Contact</a> &ensp;
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Search..." style="padding-left: 10px; border-radius: 10px; margin-right: 10px; font-size: large;">
+                    <a href="Log-In (1).html"><button  class="login-button" >Login</button></a> 
+                    <a href="Sign Up (1).html"><button class="signup-button">Sign Up</button></a>
+                </div>  
+                <div class="menu-toggle">
+                  <div class="hamburger">
+                    <img src="HamburgerIcon.png" alt="">
+                  </div>
+                </div>
+            </nav>
+          </header>
+
+        <h2 style=" color: black; text-shadow: 2px 2px 2px 2px black; background-color: grey; font-style: oblique;" >
+            <p class="text-center"> Our Tailors </p>  
+        </h2>
+
+          
+<div class="tailor-container owl-carousel" id="tailorCarousel">
+    <div class="tailor active">
+      <img src="TT4.JPG" alt="Tailor 1">
+      <div class="tailor-details">
+       
+      </div>
+    </div>
+    
+    <div class="tailor">
+      <img src="TT3.JPG" alt="Tailor 2">
+      <div class="tailor-details">
+       
+      </div>
+    </div>
+    
+    <div class="tailor">
+      <img src="TT1.JPG" alt="Tailor 3">
+      <div class="tailor-details">
+       
+      </div>
+    </div>
+    
+    <div class="tailor">
+      <img src="TT2.JPG" alt="Tailor 4">
+      <div class="tailor-details">
+        
+      </div>
+    </div>
+  </div>
+
+      <!-- content body  -->
+    <div class="containerS">
+        <!-- First Row -->
+          <div class="card">
+              <img src="TT3.JPG" alt="Placeholder Image">
+              <p>2 Piece Suit Embroidered </p>
+              <p>Rs.8,900</p>
+          </div>
+          <div class="card">
+              <img src="TT2.JPG" alt="Placeholder Image">
+              <p>3 Piece Lawn Suit - Embroidered </p>
+              <p>Rs.12,900</p>
+          </div>
+          <div class="card">
+              <img src="TT1.JPG" alt="Placeholder Image">
+              <p>3 Piece Satin Suit - Embroidered</p>
+              <p>Rs.8,900</p>
+          </div>
+          <div class="card">
+              <img src="TT4.JPG" alt="Placeholder Image">
+              <p>Lawn Shirt Pasted</p>
+              <p>Rs.3,000</p>
+          </div>
+</div>  
+
+        <div class="container tailor-contact-form">
+            <h1 class="text-center mb-4">Contact Your Tailor</h1>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" class="form-control" id="name"
+                        name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" class="form-control" id="email"
+                        name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Phone No:</label>
+                    <input type="number" class="form-control" id="PhoneNo"
+                        name="Pohone" required>
+              
+                    </div>
+                <div class="form-group">
+                    <label for="message">Your Requirements:</label>
+                    <textarea class="form-control" id="message" name="message"
+                        rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send
+                    Message</button><br>
+<br>
+                    <div class="form-group">
+                        <label for="size">Preferred Size:</label>
+                        <br>
+                        <select class="form-control" id="size" name="size" required>
+                            <option value="">Select Size</option>
+                            <option value="short">Short</option>
+                            <option value="medium">Medium</option>
+                            <option value="long">Long</option>
+                            <option value="extra-long">Extra Long</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+
+
+
+        <section class="footer">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Info</h4>
+                    <ul class="links">
+                        <li><a href="aboutUs.html">About Us</a></li>
+                        <li><a href="#">Compressions</a></li>
+                        <li><a href="#">Customers</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Collection</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul class="links">
+                        <li><a href="#">Free Designs</a></li>
+                        <li><a href="#">Latest Designs</a></li>
+                        <li><a href="#">Themes</a></li>
+                        <li><a href="#">Popular Designs</a></li>
+                        <li><a href="#">Art Skills</a></li>
+                        <li><a href="#">New Uploads</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="links">
+                        <li><a href="#">Customer Agreement</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">GDPR</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Media Kit</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>
+                        Subscribe to our newsletter for a weekly dose
+                        of news, updates, helpful tips, and
+                        exclusive offers.
+                    </p>
+                    <form action="#">
+                        <input type="text" placeholder="Your email" required>
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="tailor.js"></script>
+    </body>
+</html>

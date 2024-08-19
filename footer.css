@@ -1,0 +1,145 @@
+footer {
+    background: #10182F;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    transition: background-color 0.5s;    
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    transition: transform 0.5s;    
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px 0;
+    transition: background-color 0.5s;    
+}
+
+.footer-section h2 {
+    margin-bottom: 8px; 
+    font-size: 1.1rem;
+    transition: color 0.5s, font-size 0.5s;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.8;
+    font-size: 0.8rem;
+    transition: color 0.5s, font-size 0.5s;
+}
+
+.footer-section a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.footer-section a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FF4500;
+    transition: width 0.3s ease;
+}
+
+.footer-section a:hover::after {    
+    width: 100%;      
+}
+
+.footer-section form {
+    margin-top: 10px;
+    transition: opacity 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section form input {
+    height: 5vh;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+    margin-bottom: 1em;
+}
+
+.footer-section form button {
+    height: 5vh;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #ff6f61;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    margin-bottom: 1em;
+}
+
+.footer-section form button:hover {
+    background: #FF4500;
+}
+
+#response-message {
+    margin-top: 10px;
+    transition: color 0.5s;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.5s;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    transition: border-color 0.5s;
+}
+
+.footer-section:hover h2 {
+    color: #FF4500;
+}
+.footer-section:hover form button {
+    background-color: #FF4500;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .social-links {
+        margin-top: 10px;
+    }
+
+    .footer-bottom {
+        border-top: none;
+    }
+}

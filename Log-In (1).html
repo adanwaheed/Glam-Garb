@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LogStyles (1).css">
+    <link rel="shortcut icon" href="glam .jpg" type="image/x-icon">
+    <title>Log-In</title>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="company-name">
+              <img src="WhatsApp Image 2024-04-27 at 17.13.01.jpeg" alt="Company Logo">
+            </div>
+            <div class="links">
+                <a href="index.html">Home</a> &ensp;
+                <a href="shop.html">Shop</a> &ensp;
+                <a href="aboutUs.html">About Us</a> &ensp;
+                <a href="contactUs.html">Contact</a> &ensp;
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search..." style="padding-left: 10px; border-radius: 10px; margin-right: 10px; font-size: large;">
+                <a href="Log-In (1).html"><button class="login-button">Login</button></a>
+                <a href="Sign Up (1).html"><button class="signup-button">Sign Up</button></a>
+            </div>
+            <div class="menu-toggle">
+              <div class="hamburger">
+                <img src="HamburgerIcon.png" alt="Menu">
+              </div>
+            </div>
+        </nav>
+      </header>
+
+    <div class="log-in">
+        <form action="GET" class="login-form" onsubmit="return login(event)" style="box-shadow: 2px 2px 2px 2px rgba(16, 49, 85, 0.5);">
+            <h1 style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Log In</h1>
+            <input type="email" name="email" placeholder="Email" id="email">
+            <div id="emailError" class="error-Handle"></div>
+            <input type="password" name="password" placeholder="Password" id="password">
+            <div id="passError" class="error-Handle"></div>
+            <div class="link"><a href="ForgetPassword.html" id="link" style="text-shadow: 2px 2px 4px rgba(21, 61, 108, 0.5);">Forgot Password?</a></div>
+            <input type="submit" value="Log In" style="box-shadow: 2px 2px 4px rgba(21, 35, 52, 0.5);">
+            <div class="link"><p>Don't have an account? <a href="Sign Up (1).html" id="link" style="text-shadow: 2px 2px 4px rgba(21, 61, 108, 0.5);">Sign Up</a></p></div>
+            <!-- <div id="more-links"><hr><span>or</span><hr></div> -->
+            <button id="btn-fb">Login with Google</button>
+        </form>
+    </div>
+
+    <script src="LoginScript.js"></script>
+</body>
+</html>

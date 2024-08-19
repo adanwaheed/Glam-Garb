@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SignStyles (1).css">
+    <title>Sign-Up</title>
+    <link rel="shortcut icon" href="glam .jpg" type="image/x-icon">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="company-name">
+                <img src="WhatsApp Image 2024-04-27 at 17.13.01.jpeg" alt="Company Logo">
+            </div>
+            <div class="links">
+                <a href="index.html">Home</a> &ensp;
+                <a href="shop.html">Shop</a> &ensp;
+                <a href="aboutUs.html">About Us</a> &ensp;
+                <a href="contactUs.html">Contact</a> &ensp;
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search..." style="padding-left: 10px; border-radius: 10px; margin-right: 10px; font-size: large;">
+                <a href="Log-In (1).html"><button class="login-button">Login</button></a>
+                <a href="Sign Up (1).html"><button class="signup-button">Sign Up</button></a>
+            </div>
+            <div class="menu-toggle">
+                <div class="hamburger">
+                    <img src="HamburgerIcon.png" alt="Menu">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="signUp-form" id="myForm">
+        <form action="#" class="form-Container" onsubmit="return signUp(event)">
+            <h1 style=" text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Sign Up</h1>
+            <input type="text" placeholder="First Name" name="firstName" id="firstName">
+            <div id="firstNameError" class="error-message"></div>
+            <input type="text" placeholder="Last Name" name="lastName" id="lastName">
+            <div id="lastNameError" class="error-message"></div>
+            <input type="email" placeholder="Enter Email" name="email" id="email">
+            <div id="emailError" class="error-message"></div>
+            <input type="password" placeholder="Enter Password" name="pass" id="pass">
+            <div id="passError" class="error-message"></div>
+            <input type="password" placeholder="Confirm Password" name="pass2" id="pass2">
+            <div id="pass2Error" class="error-message"></div>
+            <div id="terms">
+                <input type="checkbox" name="terms" id="check">
+                <label for="check">I agree to <a href="TrustPolicies.html">terms & services.</a></label>
+            </div>
+            <div id="checkError" class="error-message"></div>
+            <input type="submit" value="Sign Up" id="submit">
+            <div class="content"><span>Already have an account? <a href="Log-In (1).html">Login</a></span></div>
+            <div class="content"><hr><span>Or</span><hr></div>
+            <button id="btn-SignUp">Sign in with Google</button>
+        </form>
+    </div>
+
+    <script src="SignScript.js"></script>
+</body>
+</html>

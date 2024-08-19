@@ -1,0 +1,226 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .full{
+    background-color: white;
+  }
+  
+  body{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .header {
+    border: 1px solid #ccc;
+    box-shadow: 0px 10px 20px -1px rgba(16, 24, 47, 0.5); /* bottom box shadow */
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+  }
+  
+  .navbar {
+    /* height: 30px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #10182F;
+    color: rgb(255, 255, 255);
+    /* opacity: 0.9; */
+  }
+  
+  .company-name img {
+    width: 80px;
+    height: 75px;
+    border-radius: 5em;
+  }
+  
+  .search{
+    display: flex;
+  }
+  
+  .links a{
+    margin: 15px;
+    color: rgb(255, 255, 255);
+    font-size: inherit;
+    text-decoration: none;
+  }
+  
+  .login-button,
+  .signup-button {
+    margin-right: 20px;
+    font-size: inherit;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    border: solid white;
+  }
+  
+  
+  .login-button:hover, .signup-button:hover{
+    background-color: rgb(203, 203, 214, 0.633);
+    color: white;
+  }
+  
+  .menu-toggle{
+    display: none;
+  }
+  
+  .menu-toggle .hamburger{
+    float: right;
+  }
+  
+  .menu-toggle .hamburger img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5rem;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .menu-toggle{
+      display: flex;
+    }
+    
+    .links{
+      display: none;
+    }
+    
+    .search {
+      display: none;
+    }
+  
+    .prev, .next {
+      font-size: 16px;
+      padding: 12px;
+    }
+  
+    .category-section{
+      flex-direction: column;
+    }
+  }
+body{
+   
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    color: #305174;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;    
+    font-size: 11px;
+    background-color: #1f4a5b;
+}
+
+.signUp-form{
+   box-shadow: 4px 4px 4px 2px  rgba(26, 54, 86, 0.5);
+    max-width: 500px;
+    width: 30vw;
+    /* margin: auto auto; */
+  margin-top: 5%;
+  /* margin-bottom: 5%; */
+    padding: 20px;
+    background-color: #eff1f1;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ddd;
+    h1{
+        text-align: center;
+        color: #1d2b30;
+    }
+}
+
+.signUp-form input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #3e7081;
+    border-radius: 5px;
+}
+
+.signUp-form input[type='password']{
+    background-image: url('show.png');
+    background-position: right 10px center;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+.signUp-form input:focus{
+    outline: none;
+    background-color: #ddd;
+    border: 1px solid #ddd;
+}
+
+.signUp-form input[type='submit']{
+    background-color: #36616f;
+    color: #fff;
+    cursor: pointer;
+}
+
+.signUp-form input[type='submit']:hover{
+    background-color: #2f5f6f;
+}
+
+.signUp-form input[type="checkbox"]{
+    width: 20px; 
+}
+
+.signUp-form #terms, .signUp-form .content{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 13px;
+    margin: 10px;
+}
+
+.signUp-form #terms a, .signUp-form .content a{
+    text-decoration: none;
+}
+
+.signUp-form .content{
+    justify-content: center;
+    color: #25373d;
+}
+
+.signUp-form .content hr{
+    width: 40%;
+}
+
+.signUp-form .terms hr{
+    width: 50%;
+}
+
+.signUp-form button{
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signUp-form button:hover{
+    background-color: #306b85;
+}
+
+.signUp-form #btn-SignUp{
+    background-image: url('pngegg.png');
+    background-position: 10px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+.signUp-form #btn-SignUp:hover, .signUp-form #submit{
+    cursor: pointer;
+    
+}
+

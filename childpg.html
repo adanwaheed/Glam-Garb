@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kid's Category</title>
+    <link rel="shortcut icon" href="glam .jpg" type="image/x-icon">
+    <link  href="childpg.css" rel="stylesheet">
+    <link rel="stylesheet" href="modalContent.css">
+    <link rel="stylesheet" href="navBar.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    
+  <header class="header">
+    <nav class="navbar">
+      <div class="company-name">
+        <img src="WhatsApp Image 2024-04-27 at 17.13.01.jpeg" alt="Logo.png">
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Category</a>
+        </li>
+        <li class="nav-item">
+          <a href="About Us.html" class="nav-link">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="contactUs.html" class="nav-link">Contact Us</a>
+        </li>
+        <div class="nav-icons">
+          <div class="nav-icon">
+            <a href="#login" class="nav-link">
+              <i class="fas fa-user"></i> Login
+            </a>
+          </div>
+          <div class="nav-icon">
+            <a href="#cart" class="nav-link">
+              <i class="fas fa-shopping-cart"></i> Cart
+            </a>
+          </div>
+        </div>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    <div class="nav-mobile">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="#" class="nav-link">Category</a>
+      <a href="About Us.html" class="nav-link">About</a>
+      <a href="contactUs.html" class="nav-link">Contact</a>
+      <a href="#login" class="nav-link">
+        <i class="fas fa-user"></i> Login
+      </a>
+      <a href="#cart" class="nav-link">
+        <i class="fas fa-shopping-cart"></i> Cart
+      </a>
+    </div>
+  </header>
+
+
+    
+
+
+    <!-- content body  -->
+    <div class="container">
+ <!-- First Row -->
+        <div class="card" onclick="openModal()">
+            <img src="../k1.JPG" alt="Placeholder Image">
+            <p>Baby Baba's Shirt - Printed </p>
+            <p>Rs.2,900</p>
+        </div>
+        <div class="card" onclick="openModal()">
+            <img src="../k2.JPG" alt="Placeholder Image">
+            <p>Kid's Trendy Suit </p>
+            <p>Rs.3,900</p>
+        </div>
+        <div class="card" onclick="openModal()">
+            <img src="../k7.JPG" alt="Placeholder Image">
+            <p>Plain Funky Shirt </p>
+            <p>Rs.2,000</p>
+        </div>
+        <div class="card" onclick="openModal()">
+            <img src="../k1.JPG" alt="Placeholder Image">
+            <p>Solid Slouchy Set</p>
+            <p>Rs.3,000</p>
+        </div>
+
+ <!-- Second Row -->
+        <div class="card" onclick="openModal()">
+            <img src="../kr.JPG" alt="Placeholder Image">
+            <p>Smile Bambo - Winters Collection</p>
+            <p>Rs.3,900</p>
+        </div>
+        <div class="card" onclick="openModal()">
+            <img src="../kr1.JPG" alt="Placeholder Image">
+            <p>Summer Waffle Toddler - frock</p>
+            <p>Rs.2,900</p>
+        </div>
+        <div class="card" onclick="openModal()">
+            <img src="../k5.JPG" alt="Placeholder Image">
+            <p> Short Funky - Summer Frock </p>
+            <p>Rs.4,900</p>
+        </div>
+        <div class="card" onclick="openModal()">
+            <img src="../k4.JPG" alt="Placeholder Image">
+            <p> Dress-up girl - frock  </p>
+            <p>Rs.3,000</p>
+        </div>
+
+ <!-- Third Row -->
+        <div class="card" onclick="openModal()">
+            <img src="../k6.JPG" alt="Placeholder Image">
+            <p> Classy Funky Top - summer bum </p>
+            <p>Rs.2,900</p>
+        </div>
+        <div class="card" onclick="openModal()">
+            <img src="../k2.JPG" alt="Placeholder Image">
+            <p> Playdate Material Tee - Sand Set </p>
+            <p>Rs.2,990</p>
+        </div>
+        <div class="card" onclick="openModal()">
+            <img src="../k8.JPG" alt="Placeholder Image">
+            <p>Hero Style - boys set </p>
+            <p>Rs.4,000</p>
+        </div>
+        <div class="card" onclick="openModal()">
+            <img src="../k3.JPG" alt="Placeholder Image">
+            <p> Beach Bum - romper style </p>
+            <p>Rs.3,900</p>
+        </div>
+
+ <!-- Fourth Row -->
+        <div class="card" onclick="openModal()">
+            <img src="../k1.JPG" alt="Placeholder Image">
+            <p>Beach Bum </p>
+            <p>Rs.2,990</p>
+        </div>
+        <div class="card" onclick="openModal()">
+            <img src="../kr1.JPG" alt="Placeholder Image">
+            <p> Bombo Shortie - Frock Set </p>
+            <p>Rs.2,900</p>
+        </div>
+        <div class="card" onclick="openModal()">
+            <img src="../k8.JPG" alt="Placeholder Image">
+            <p>GinGham Rain - Boys Shorts </p>
+            <p>Rs.3,000</p>
+        </div>
+        <div class="card" onclick="openModal()">
+            <img src="../k6.JPG" alt="Placeholder Image">
+            <p>Girls - Floer Flutter set </p>
+            <p>Rs.2,900</p>
+        </div>
+    </div>
+
+  
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <img src="card-image.jpg" alt="Card Image">
+        <div class="product-details">
+          <h2>Product Details</h2>
+          <p id="product-name">Product Name</p>
+          <p id="product-price">Product Price</p>
+          <label for="size">Size:</label>
+            <select id="size">
+                <option value="">Select</option>
+                <option value="">Large</option>
+                <option value="">Medium</option>
+                <option value="">Small</option>
+                <option value="">Extra Large</option>
+            </select> 
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" value="1"><br>
+          <button onclick="addToCart()">Add to Cart</button>
+          <button onclick="buyNow()">Buy Now</button>
+        </div>          
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+          <div class="footer-section customer-service">
+              <h2>Customer Service</h2>
+              <ul>
+                  <li><a href="#">Shipping & Returns</a></li>
+                  <li><a href="#">Size Guide</a></li>
+                  <li><a href="#">Order Tracking</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+              </ul>
+          </div>
+          <div class="footer-section store-locator">
+              <h2>Store Locator</h2>
+              <p>Enter your zip code to find your nearest store.</p>
+              <form action="#" id="store-locator-form">
+                  <input type="text" placeholder="Zip Code" aria-label="Zip Code">
+                  <button type="submit">Search</button>
+              </form>
+          </div>
+          <div class="footer-section contact-us">
+              <h2>Contact Us</h2>
+              <p>Phone: +92#########</p>
+              <p>Email: info@example.com</p>
+          </div>
+          <div class="footer-section social-links">
+              <h2>Follow Us</h2>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p id="response-message"></p>
+          <p>&copy; <span id="current-year"></span> - All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="navBar.js"></script>
+      <script src="footer.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+      <script src="modalJS.js"></script>
+
+</body>
+</html>

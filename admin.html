@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="shortcut icon" href="glam .jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container-fluid" style="margin: 0; padding: 0;">
+        <aside class="sidebar" id="sidebar">
+            <div class="logo">
+                <h2>
+                    <img src="WhatsApp Image 2024-04-27 at 17.13.01.jpeg" alt="Logo.png" style="width: 200px; height: 110px;">
+                </h2>
+            </div>
+            <ul class="menu">
+                <li><a href="#"><i class="icon-dashboard"></i> Dashboard</a></li>
+                <li><a href="adminProducts.html"><i class="icon-widgets"></i> Products</a></li>
+                <li><a href="#"><i class="icon-elements"></i> Inventory</a></li>
+                <li><a href="#"><i class="icon-advanced"></i> Customers</a></li>                
+            </ul>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <span class="menu-toggle" id="menu-toggle">&#9776;</span>
+                <input type="text" placeholder="search">
+                <div class="user-info">
+                    <span>GLAM GARB</span>
+                    <i class="icon-settings"></i>
+                </div>
+            </header>
+            <section class="dashboard">
+                <div class="card">
+                    <h3><i class="fa-solid fa-user"></i> &ensp; Customers</h3>
+                    <p>45679</p>
+                    <span>Increase by 20%</span>
+                </div>
+                <div class="card">
+                  <h3><i class="fa-brands fa-jedi-order"></i></i>&ensp; Orders</h3>
+                    <p>80927</p>
+                    <span>Increase by 60%</span>
+                </div>
+                <div class="card">
+                    <h3><i class="fa-solid fa-truck-fast"></i>&ensp; Delivery</h3>
+                    <p>22339</p>
+                    <span>Decrease by 2%</span>
+                </div>
+                <div class="card">
+                    <h3>   <i class="fa-regular fa-user"></i> &ensp;  Users</h3>
+                   
+                    <p>+1900</p>
+                    <span>Steady growth</span>
+                </div>
+                <div class="card chart-card">
+                    <h3>Product categories</h3>
+                    <canvas id="productCategoriesChart"></canvas>
+                </div>
+                <div class="card chart-card">
+                    <h3>Product visits</h3>
+                    <canvas id="productVisitsChart"></canvas>
+                </div>
+                <div class="card">
+                    <h3>Revenue</h3>
+                    <p>36568</p>
+                    <div class="revenue-stats">
+                        <span>Growth: +40%</span>
+                        <span>Refund: 2.5%</span>
+                        <span>Online: +23.6%</span>
+                    </div>
+                    <div class="revenue-waves"></div>
+                </div>
+             
+                <div class="row">
+                    <div class="card h-100">
+                        <h3>Best sellers</h3>
+                        <p>Product A: 5000 units</p>
+                        <p>Product B: 3000 units</p>
+                        <p>Product C: 1500 units</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

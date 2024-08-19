@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="shortcut icon" href="glam .jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container-fluid" style="margin: 0; padding: 0;">
+        <aside class="sidebar" id="sidebar">
+            <div class="logo">
+                <h2>
+                    <img src="WhatsApp Image 2024-04-27 at 17.13.01.jpeg" alt="Logo" style="width: 200px; height: 110px;">
+                </h2>
+            </div>
+            <ul class="menu">
+                <li><a href="admin.html"><i class="icon-dashboard"></i> Dashboard</a></li>
+                <li><a href="#"><i class="icon-widgets"></i> Products</a></li>
+                <li><a href="#"><i class="icon-elements"></i> Inventory</a></li>
+                <li><a href="#"><i class="icon-advanced"></i> Customers</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <span class="menu-toggle" id="menu-toggle"></span>
+                <input type="text" placeholder="search">
+                <div class="user-info">
+                    <span>GLAM GARB</span>
+                    <i class="icon-settings"></i>
+                </div>
+            </header>
+            <button class="btn btn-primary ms-2 mt-2" data-bs-toggle="modal" data-bs-target="#addProductModal" style="width: 140px;">Add Product <i class="fa-solid fa-plus"></i></button>
+            <section class="dashboard">
+                <table id="productTable" class="table table-striped table-bordered" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Description</th>
+                            <th>Size</th>
+                            <th>Price</th>
+                            <th>Image</th>
+                            <th>Settings</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    
+                    <!-- Modal for Adding Product -->
+<div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="addProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addProductModalLabel">Add Product</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addProductForm" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="image" class="form-label">Image:</label>
+                        <input type="file" id="image" name="image" class="form-control" required><br><br>
+                    </div>
+                    <div class="mb-3">
+                        <label for="productName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="productName" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="productCategory" class="form-label">Category</label>
+                        <select name="category" class="form-control" id="productCategory" required>
+                            <option value="Men">Men</option>
+                            <option value="Women">Women</option>
+                            <option value="Children">Children</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="productDescription" class="form-label">Description</label>
+                        <textarea class="form-control" id="productDescription" name="description" rows="3" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="productSize" class="form-label">Size</label>
+                        <input type="text" class="form-control" id="productSize" name="size" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="productPrice" class="form-label">Price</label>
+                        <input type="number" class="form-control" id="productPrice" name="price" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Product</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Modal for Updating Product -->
+    <!-- Modal for Updating Product -->
+<div class="modal fade" id="updateProductModal" tabindex="-1" aria-labelledby="updateProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateProductModalLabel">Update Product</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="updateProductForm">
+                    <input type="hidden" id="updateProductId" name="id">
+                    <div class="mb-3">
+                        <label for="updateProductName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="updateProductName" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="updateProductCategory" class="form-label">Category</label>
+                        <select name="category" class="form-control" id="updateProductCategory" required>
+                            <option value="Men">Men</option>
+                            <option value="Women">Women</option>
+                            <option value="Children">Children</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="updateProductDescription" class="form-label">Description</label>
+                        <textarea class="form-control" id="updateProductDescription" name="description" rows="3" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="updateProductSize" class="form-label">Size</label>
+                        <input type="text" class="form-control" id="updateProductSize" name="size" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="updateProductPrice" class="form-label">Price</label>
+                        <input type="number" class="form-control" id="updateProductPrice" name="price" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Update Product</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+    const fetchProducts = async () => {
+        try {
+            const response = await fetch('http://localhost:3003/getProducts');
+            const products = await response.json();
+            
+            const tableBody = document.querySelector('#productTable tbody');
+            tableBody.innerHTML = '';  // Clear existing rows
+
+            products.forEach(product => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${product.name}</td>
+                    <td>${product.category}</td>
+                    <td>${product.description}</td>
+                    <td>${product.size}</td>
+                    <td>${product.price}</td>
+                    <td><img src="${product.image}" alt="${product.name}" style="width: 50px;"></td>
+                    <td>
+                        <i class="fa-regular fa-pen-to-square update-btn" data-id="${product._id}" style="cursor: pointer; color: lightgreen"></i>
+                        &ensp;
+                        <i class="fa-regular fa-trash-can delete-btn mx-auto" data-id="${product._id}" style="cursor: pointer; color: red"></i>
+                    </td>
+                `;
+                tableBody.appendChild(row);
+            });
+        } catch (error) {
+            console.error('Error fetching products:', error);
+        }
+    };
+
+    await fetchProducts();
+
+    document.getElementById('addProductForm').addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(event.target);
+
+        try {
+            await fetch('http://localhost:3003/addProduct', {
+                method: 'POST',
+                body: formData
+            });
+            fetchProducts();
+            document.getElementById('addProductForm').reset();
+            document.querySelector('#addProductModal .btn-close').click();
+        } catch (error) {
+            console.error('Error adding product:', error);
+        }
+    });
+
+    document.getElementById('productTable').addEventListener('click', async (event) => {
+        if (event.target.classList.contains('delete-btn')) {
+            const productId = event.target.dataset.id;
+            try {
+                await fetch(`http://localhost:3003/deleteProduct/${productId}`, { method: 'DELETE' });
+                fetchProducts();
+            } catch (error) {
+                console.error('Error deleting product:', error);
+            }
+        } else if (event.target.classList.contains('update-btn')) {
+            const productId = event.target.dataset.id;
+
+            try {
+                const response = await fetch(`http://localhost:3003/getProduct/${productId}`);
+                const product = await response.json();
+
+                document.getElementById('updateProductId').value = productId;
+                document.getElementById('updateProductName').value = product.name;
+                document.getElementById('updateProductCategory').value = product.category;
+                document.getElementById('updateProductDescription').value = product.description;
+                document.getElementById('updateProductSize').value = product.size;
+                document.getElementById('updateProductPrice').value = product.price;
+
+                const updateModal = new bootstrap.Modal(document.getElementById('updateProductModal'));
+                updateModal.show();
+            } catch (error) {
+                console.error('Error fetching product details:', error);
+            }
+        }
+    });
+
+    document.getElementById('updateProductForm').addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        const productId = document.getElementById('updateProductId').value;
+        const formData = new FormData(event.target);
+
+        try {
+            await fetch(`http://localhost:3003/updateProduct/${productId}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(Object.fromEntries(formData.entries()))
+            });
+            fetchProducts();
+            document.getElementById('updateProductForm').reset();
+            document.querySelector('#updateProductModal .btn-close').click();
+        } catch (error) {
+            console.error('Error updating product:', error);
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
